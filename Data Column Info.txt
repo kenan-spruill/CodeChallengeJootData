@@ -1,0 +1,57 @@
+## The Data
+The dataset consists of roughly 4000 rows and 4000 columns. 
+
+### Data Prefixes & Members
+Description of Prefixes
+
+*   target: the dependent y-var of the data. Should map 1:1 to each row (one column)
+
+*   U_: (user) the user account which made the post (1-10 columns)
+
+*   WI_: (whole image) the image tag observed in the post (~3000 columns)
+
+*   ST_: (salient tag) the image tag observed in the salient portion of the post (not present in this data)
+
+*   LG: (lagged results) -- the engagement values for the previous 7 posts in a dataset (7 columns)
+
+
+**COLORS**
+
+*   BG: the color of the background of the image (~200 columns)
+
+*   FG: the color of the foreground of an image (~200 columns)
+
+*   SAL: the color of the salient portion of an image (~200 columns)
+
+
+**IMAGE QUALITY (IQ_)**
+
+Members: 
+
+*    'IQ_IQ_HSV_Value'
+*    'IQ_IQ_height' (pixels)
+*    'IQ_IQ_aspectRatio'(width/height)
+*    'IQ_IQ_width' (pixels)
+*    'IQ_IQ_HLS_Hue'
+*    'IQ_IQ_colorfulness'
+*    'IQ_IQ_sharpness'
+*    'IQ_IQ_HSV_Saturation'
+*    'IQ_IQ_HSV_Hue'
+*    'IQ_IQ_HLS_Saturation'
+*    'IQ_IQ_HLS_Light'
+
+
+
+
+**DATES (_D)**
+
+*   _Ddow: a binary variable representing the day of the week the item was posted. Monday is the first day (7 columns)
+
+*   _Dh: binary representing the hour of the day of the post  (24 columns)
+
+*   _Dm: binary represeting the month in which the post was posted (12 columns)
+
+*   Dy: binary representing the year in which a post was posted (varies based on account)
+
+*   _dateR: integer representing how many days from a fixed point a post was made (I believe the fixed point is January 1, 2018) 
+

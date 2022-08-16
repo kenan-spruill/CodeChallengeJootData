@@ -1,4 +1,40 @@
 # CodeChallengeJootData
+
+## About Joot
+Joot is a company that builds predictive models for Instagram, specifically a model that helps the user select the most engaging instagram images. 
+
+By analyzing the engagement levels of past instagram post, extracting metadata, and performing feature generation using Computer Vision; Joot is able to generate models for businesses so they can always post the best image on their company social media pages. 
+
+## The Challenge
+The following is a coding challenge using real world data, where you are tasked with dianosing what is going wrong with the predictive  processes, and figure out why the model is returning bad outputs. 
+
+You will be comparing the input dataset to the predictive dataset, and see if there are significant differences in any of the columns. There are generally around 4000 columns, but every column has a prefix and there are only a handful of prefixes, if something is going wrong it is probably happening at the prefix level and affecting all of the columns in that prefix (although that isn't guaranteed)
+
+You will likely find the most success comparing and contrasting the data from the training set to the data from the predictive set, and seeing if there is any data that is **sparse** or **minimal variance** in one of the datasets, **but not both**. 
+
+I will provide some EDA input below representing how I would begin to approach the project. 
+
+## The Use Case
+
+
+
+
+
+Loyal Stricklin is a Joot client and a leather goods retail company based in Nashville, Tennessee
+
+They have input into the Joot interface that they would like to build an image model based on a conglamarate of the following accounts.
+ 
+*   loyal_stricklin (their own account)
+*   tannergoods
+*   missionworkshop
+*   trakkebags
+*   treesizeverse
+*   vermilyeapelle
+*   bradleymountain
+
+These accounts are also leather goods retailers/influencers. 
+
+
 ## Dataset Description
 
 (Rank ordered roughly by importance)

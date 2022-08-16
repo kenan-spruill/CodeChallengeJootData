@@ -1,0 +1,86 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fmodern\fcharset0 Courier-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red255\green255\blue254;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c100000;\cssrgb\c100000\c100000\c99608;\cssrgb\c0\c0\c0;
+}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 ## The Data\cf0 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 The dataset consists of roughly 4000 rows and 4000 columns. \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 ### Data Prefixes & Members\cf0 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 Description of Prefixes\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 * \cf0 \strokec4   target: the dependent y-var of the data. Should map 1:1 to each row (one column)\cb1 \
+\
+\cf2 \cb3 \strokec2 * \cf0 \strokec4   U_: (user) the user account which made the post (1-10 columns)\cb1 \
+\
+\cf2 \cb3 \strokec2 * \cf0 \strokec4   WI_: (whole image) the image tag observed in the post (~3000 columns)\cb1 \
+\
+\cf2 \cb3 \strokec2 * \cf0 \strokec4   ST_: (salient tag) the image tag observed in the salient portion of the post (not present in this data)\cb1 \
+\
+\cf2 \cb3 \strokec2 * \cf0 \strokec4   LG: (lagged results) -- the engagement values for the previous 7 posts in a dataset (7 columns)\cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf0 \cb3 **COLORS**
+\f0\b0 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 * \cf0 \strokec4   BG: the color of the background of the image (~200 columns)\cb1 \
+\
+\cf2 \cb3 \strokec2 * \cf0 \strokec4   FG: the color of the foreground of an image (~200 columns)\cb1 \
+\
+\cf2 \cb3 \strokec2 * \cf0 \strokec4   SAL: the color of the salient portion of an image (~200 columns)\cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf0 \cb3 **IMAGE QUALITY (IQ_)**
+\f0\b0 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 Members: \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 * \cf0 \strokec4    'IQ_IQ_HSV_Value'\cb1 \
+\cf2 \cb3 \strokec2 * \cf0 \strokec4    'IQ_IQ_height' (pixels)\cb1 \
+\cf2 \cb3 \strokec2 * \cf0 \strokec4    'IQ_IQ_aspectRatio'(width/height)\cb1 \
+\cf2 \cb3 \strokec2 * \cf0 \strokec4    'IQ_IQ_width' (pixels)\cb1 \
+\cf2 \cb3 \strokec2 * \cf0 \strokec4    'IQ_IQ_HLS_Hue'\cb1 \
+\cf2 \cb3 \strokec2 * \cf0 \strokec4    'IQ_IQ_colorfulness'\cb1 \
+\cf2 \cb3 \strokec2 * \cf0 \strokec4    'IQ_IQ_sharpness'\cb1 \
+\cf2 \cb3 \strokec2 * \cf0 \strokec4    'IQ_IQ_HSV_Saturation'\cb1 \
+\cf2 \cb3 \strokec2 * \cf0 \strokec4    'IQ_IQ_HSV_Hue'\cb1 \
+\cf2 \cb3 \strokec2 * \cf0 \strokec4    'IQ_IQ_HLS_Saturation'\cb1 \
+\cf2 \cb3 \strokec2 * \cf0 \strokec4    'IQ_IQ_HLS_Light'\cb1 \
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf0 \cb3 **DATES (_D)**
+\f0\b0 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 * \cf0 \strokec4   _Ddow: a binary variable representing the day of the week the item was posted. Monday is the first day (7 columns)\cb1 \
+\
+\cf2 \cb3 \strokec2 * \cf0 \strokec4   _Dh: binary representing the hour of the day of the post  (24 columns)\cb1 \
+\
+\cf2 \cb3 \strokec2 * \cf0 \strokec4   _Dm: binary represeting the month in which the post was posted (12 columns)\cb1 \
+\
+\cf2 \cb3 \strokec2 * \cf0 \strokec4   Dy: binary representing the year in which a post was posted (varies based on account)\cb1 \
+\
+\cf2 \cb3 \strokec2 * \cf0 \strokec4   _dateR: integer representing how many days from a fixed point a post was made (I believe the fixed point is January 1, 2018) \cb1 \
+\
+}
